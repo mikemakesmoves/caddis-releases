@@ -1,0 +1,3390 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "createdAt": "2026-08-02T11:16:20.040Z",
+    "modifiedAt": "2026-08-02T11:16:20.041Z",
+    "name": "connectPoints",
+    "projectFormatVersion": 1
+  },
+  "compositions": {
+    "c17e01d5-c4b1-412a-959e-b117187a2993": {
+      "id": "c17e01d5-c4b1-412a-959e-b117187a2993",
+      "name": "Point Connect",
+      "resolution": {
+        "width": 1080,
+        "height": 1920
+      },
+      "frameRate": {
+        "numerator": 30,
+        "denominator": 1
+      },
+      "durationFrames": 300,
+      "layers": [
+        "eb1ee994-bcb3-467c-8930-86951212261f",
+        "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0"
+      ],
+      "shutterAngle": 180,
+      "shutterPhase": -90,
+      "samplesPerFrame": 8
+    }
+  },
+  "layers": {
+    "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0": {
+      "id": "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0",
+      "label": "Circle",
+      "startFrame": 0,
+      "endFrame": 303,
+      "offsetFrame": 0,
+      "transform": {
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "rotation": 0,
+        "anchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "opacity": 1
+      },
+      "blendMode": "normal",
+      "enabled": true,
+      "motionBlur": false,
+      "matteLayerId": null,
+      "matteMode": null,
+      "showMatteSource": false,
+      "graph": {
+        "nodes": {
+          "85dca011-98eb-4019-a9d8-d0f0fd7036e4": {
+            "id": "85dca011-98eb-4019-a9d8-d0f0fd7036e4",
+            "nodeType": "Output",
+            "label": "Output",
+            "bypassed": false,
+            "exposeChannels": false,
+            "link": null,
+            "params": [
+              {
+                "id": "opacity",
+                "label": "Opacity",
+                "value": {
+                  "type": "scalar",
+                  "value": 1
+                },
+                "keyframes": null
+              },
+              {
+                "id": "blendMode",
+                "label": "Blend Mode",
+                "value": {
+                  "type": "scalar",
+                  "value": 0
+                },
+                "keyframes": null
+              },
+              {
+                "id": "motionBlur",
+                "label": "Motion Blur",
+                "value": {
+                  "type": "boolean",
+                  "value": false
+                },
+                "keyframes": null
+              },
+              {
+                "id": "audioGain",
+                "label": "Audio Gain",
+                "value": {
+                  "type": "scalar",
+                  "value": 1
+                },
+                "keyframes": null
+              },
+              {
+                "id": "audioPan",
+                "label": "Audio Pan",
+                "value": {
+                  "type": "scalar",
+                  "value": 0
+                },
+                "keyframes": null
+              },
+              {
+                "id": "audioMute",
+                "label": "Mute",
+                "value": {
+                  "type": "boolean",
+                  "value": false
+                },
+                "keyframes": null
+              }
+            ],
+            "ports": [
+              {
+                "id": "in",
+                "label": "Input",
+                "portType": "imageRgba16f",
+                "direction": "input"
+              },
+              {
+                "id": "audio_in",
+                "label": "Audio",
+                "portType": "audio",
+                "direction": "input"
+              }
+            ]
+          },
+          "a17c95ef-c192-4600-a7ac-864f21e71742": {
+            "id": "a17c95ef-c192-4600-a7ac-864f21e71742",
+            "nodeType": "Circle",
+            "label": "Circle",
+            "bypassed": false,
+            "exposeChannels": false,
+            "link": null,
+            "params": [
+              {
+                "id": "radius",
+                "label": "Radius",
+                "value": {
+                  "type": "scalar",
+                  "value": 529.8046875
+                },
+                "keyframes": null
+              }
+            ],
+            "ports": [
+              {
+                "id": "out",
+                "label": "Shape",
+                "portType": "shape",
+                "direction": "output"
+              }
+            ]
+          },
+          "ea2c8b14-c4ec-407a-877f-3975b5bcd474": {
+            "id": "ea2c8b14-c4ec-407a-877f-3975b5bcd474",
+            "nodeType": "DrawShape",
+            "label": "Draw Shape",
+            "bypassed": false,
+            "exposeChannels": false,
+            "link": null,
+            "params": [
+              {
+                "id": "fillEnabled",
+                "label": "Fill",
+                "value": {
+                  "type": "boolean",
+                  "value": false
+                },
+                "keyframes": null
+              },
+              {
+                "id": "fillColor",
+                "label": "Fill Color",
+                "value": {
+                  "type": "color",
+                  "value": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  }
+                },
+                "keyframes": null
+              },
+              {
+                "id": "fillOpacity",
+                "label": "Fill Opacity",
+                "value": {
+                  "type": "scalar",
+                  "value": 1
+                },
+                "keyframes": null
+              },
+              {
+                "id": "fillRule",
+                "label": "Fill Rule",
+                "value": {
+                  "type": "string",
+                  "value": "nonZero"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "fillUvMode",
+                "label": "Fill UV",
+                "value": {
+                  "type": "string",
+                  "value": "Canvas"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "strokeEnabled",
+                "label": "Stroke",
+                "value": {
+                  "type": "boolean",
+                  "value": true
+                },
+                "keyframes": null
+              },
+              {
+                "id": "strokeColor",
+                "label": "Stroke Color",
+                "value": {
+                  "type": "color",
+                  "value": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  }
+                },
+                "keyframes": null
+              },
+              {
+                "id": "strokeWidth",
+                "label": "Stroke Width",
+                "value": {
+                  "type": "scalar",
+                  "value": 3.5
+                },
+                "keyframes": null
+              },
+              {
+                "id": "strokeOpacity",
+                "label": "Stroke Opacity",
+                "value": {
+                  "type": "scalar",
+                  "value": 1
+                },
+                "keyframes": null
+              },
+              {
+                "id": "strokeJoin",
+                "label": "Join",
+                "value": {
+                  "type": "string",
+                  "value": "miter"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "strokeCap",
+                "label": "Cap",
+                "value": {
+                  "type": "string",
+                  "value": "round"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "miterLimit",
+                "label": "Miter Limit",
+                "value": {
+                  "type": "scalar",
+                  "value": 4
+                },
+                "keyframes": null
+              },
+              {
+                "id": "paintOrder",
+                "label": "Paint Order",
+                "value": {
+                  "type": "string",
+                  "value": "StrokeOverFill"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "strokeUvMode",
+                "label": "Stroke UV",
+                "value": {
+                  "type": "string",
+                  "value": "Stroke"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "dashEnabled",
+                "label": "Dashed",
+                "value": {
+                  "type": "boolean",
+                  "value": false
+                },
+                "keyframes": null
+              },
+              {
+                "id": "dash",
+                "label": "Dash",
+                "value": {
+                  "type": "scalar",
+                  "value": 12
+                },
+                "keyframes": null
+              },
+              {
+                "id": "gap",
+                "label": "Gap",
+                "value": {
+                  "type": "scalar",
+                  "value": 6
+                },
+                "keyframes": null
+              },
+              {
+                "id": "dashOffset",
+                "label": "Offset",
+                "value": {
+                  "type": "scalar",
+                  "value": 0
+                },
+                "keyframes": null
+              },
+              {
+                "id": "taperStart",
+                "label": "Taper Start",
+                "value": {
+                  "type": "scalar",
+                  "value": 1
+                },
+                "keyframes": null
+              },
+              {
+                "id": "taperEnd",
+                "label": "Taper End",
+                "value": {
+                  "type": "scalar",
+                  "value": 1
+                },
+                "keyframes": null
+              },
+              {
+                "id": "taperStartLength",
+                "label": "Start Length",
+                "value": {
+                  "type": "scalar",
+                  "value": 0.5
+                },
+                "keyframes": null
+              },
+              {
+                "id": "taperEndLength",
+                "label": "End Length",
+                "value": {
+                  "type": "scalar",
+                  "value": 0.5
+                },
+                "keyframes": null
+              }
+            ],
+            "ports": [
+              {
+                "id": "shape_in",
+                "label": "Shape",
+                "portType": "shape",
+                "direction": "input"
+              },
+              {
+                "id": "fill_source",
+                "label": "Fill Source",
+                "portType": "imageRgba16f",
+                "direction": "input"
+              },
+              {
+                "id": "stroke_source",
+                "label": "Stroke Source",
+                "portType": "imageRgba16f",
+                "direction": "input"
+              },
+              {
+                "id": "out",
+                "label": "Output",
+                "portType": "imageRgba16f",
+                "direction": "output"
+              }
+            ]
+          },
+          "426b845c-23fd-491d-83b7-683ca098687e": {
+            "id": "426b845c-23fd-491d-83b7-683ca098687e",
+            "nodeType": "PointScatter",
+            "label": "Point Scatter",
+            "bypassed": false,
+            "exposeChannels": false,
+            "link": null,
+            "params": [
+              {
+                "id": "mode",
+                "label": "Mode",
+                "value": {
+                  "type": "string",
+                  "value": "Fill"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "count",
+                "label": "Count",
+                "value": {
+                  "type": "scalar",
+                  "value": 50
+                },
+                "keyframes": null
+              },
+              {
+                "id": "seed",
+                "label": "Seed",
+                "value": {
+                  "type": "scalar",
+                  "value": 0
+                },
+                "keyframes": null
+              }
+            ],
+            "ports": [
+              {
+                "id": "shape_in",
+                "label": "Shape",
+                "portType": "shape",
+                "direction": "input"
+              },
+              {
+                "id": "out",
+                "label": "Points",
+                "portType": "points",
+                "direction": "output"
+              }
+            ]
+          },
+          "42586a60-248c-42be-964a-d0c0c457fa82": {
+            "id": "42586a60-248c-42be-964a-d0c0c457fa82",
+            "nodeType": "ConnectPoints",
+            "label": "Connect Points",
+            "bypassed": false,
+            "exposeChannels": false,
+            "link": null,
+            "params": [
+              {
+                "id": "mode",
+                "label": "Mode",
+                "value": {
+                  "type": "string",
+                  "value": "Radius"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "closed",
+                "label": "Closed",
+                "value": {
+                  "type": "boolean",
+                  "value": false
+                },
+                "keyframes": null
+              },
+              {
+                "id": "neighbors",
+                "label": "Neighbors",
+                "value": {
+                  "type": "scalar",
+                  "value": 5
+                },
+                "keyframes": null
+              },
+              {
+                "id": "radius",
+                "label": "Radius",
+                "value": {
+                  "type": "scalar",
+                  "value": 20
+                },
+                "keyframes": [
+                  {
+                    "frame": 200,
+                    "value": {
+                      "type": "scalar",
+                      "value": 500
+                    },
+                    "interpolation": "linear",
+                    "bezierOut": null,
+                    "bezierIn": null,
+                    "handleMode": null,
+                    "spatialTangentOut": null,
+                    "spatialTangentIn": null,
+                    "spatialMode": null
+                  },
+                  {
+                    "frame": 296,
+                    "value": {
+                      "type": "scalar",
+                      "value": 20
+                    },
+                    "interpolation": "linear",
+                    "bezierOut": null,
+                    "bezierIn": null,
+                    "handleMode": null,
+                    "spatialTangentOut": null,
+                    "spatialTangentIn": null,
+                    "spatialMode": null
+                  }
+                ]
+              },
+              {
+                "id": "fade",
+                "label": "Fade",
+                "value": {
+                  "type": "scalar",
+                  "value": 2
+                },
+                "keyframes": null
+              },
+              {
+                "id": "maxConnections",
+                "label": "Max Connections",
+                "value": {
+                  "type": "scalar",
+                  "value": 0
+                },
+                "keyframes": null
+              }
+            ],
+            "ports": [
+              {
+                "id": "points_in",
+                "label": "Points",
+                "portType": "points",
+                "direction": "input"
+              },
+              {
+                "id": "out",
+                "label": "Shape",
+                "portType": "shape",
+                "direction": "output"
+              }
+            ]
+          },
+          "07da50cc-f017-432c-b091-ec46a0ec724f": {
+            "id": "07da50cc-f017-432c-b091-ec46a0ec724f",
+            "nodeType": "PointDeform",
+            "label": "Point Deform",
+            "bypassed": false,
+            "exposeChannels": false,
+            "link": null,
+            "params": [
+              {
+                "id": "mode",
+                "label": "Mode",
+                "value": {
+                  "type": "string",
+                  "value": "XY"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "amplitude",
+                "label": "Amplitude",
+                "value": {
+                  "type": "vec2",
+                  "value": {
+                    "x": 200,
+                    "y": 200
+                  }
+                },
+                "keyframes": null
+              },
+              {
+                "id": "source",
+                "label": "Source",
+                "value": {
+                  "type": "string",
+                  "value": "Field"
+                },
+                "keyframes": null
+              }
+            ],
+            "ports": [
+              {
+                "id": "points_in",
+                "label": "Points",
+                "portType": "points",
+                "direction": "input"
+              },
+              {
+                "id": "field_in",
+                "label": "Field In",
+                "portType": "vectorField",
+                "direction": "input"
+              },
+              {
+                "id": "value_in",
+                "label": "Value In",
+                "portType": "vec2",
+                "direction": "input"
+              },
+              {
+                "id": "amplitude_in",
+                "label": "Amplitude",
+                "portType": "scalar",
+                "direction": "input"
+              },
+              {
+                "id": "out",
+                "label": "Points",
+                "portType": "points",
+                "direction": "output"
+              }
+            ]
+          },
+          "8ff3e149-05c3-4f6f-a59b-14ad53e25e27": {
+            "id": "8ff3e149-05c3-4f6f-a59b-14ad53e25e27",
+            "nodeType": "Noise",
+            "label": "Noise",
+            "bypassed": false,
+            "exposeChannels": false,
+            "link": null,
+            "params": [
+              {
+                "id": "noiseType",
+                "label": "Type",
+                "value": {
+                  "type": "string",
+                  "value": "Perlin"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "fbmMode",
+                "label": "Mode",
+                "value": {
+                  "type": "string",
+                  "value": "Standard"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "seed",
+                "label": "Seed",
+                "value": {
+                  "type": "scalar",
+                  "value": 0
+                },
+                "keyframes": null
+              },
+              {
+                "id": "scale",
+                "label": "Scale",
+                "value": {
+                  "type": "vec2",
+                  "value": {
+                    "x": 100,
+                    "y": 100
+                  }
+                },
+                "keyframes": null
+              },
+              {
+                "id": "offset",
+                "label": "Offset",
+                "value": {
+                  "type": "vec2",
+                  "value": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                "keyframes": null
+              },
+              {
+                "id": "evolution",
+                "label": "Evolution",
+                "value": {
+                  "type": "scalar",
+                  "value": 0
+                },
+                "keyframes": null
+              },
+              {
+                "id": "looping",
+                "label": "Looping",
+                "value": {
+                  "type": "boolean",
+                  "value": true
+                },
+                "keyframes": null
+              },
+              {
+                "id": "cycleDuration",
+                "label": "Cycle (frames)",
+                "value": {
+                  "type": "scalar",
+                  "value": 150
+                },
+                "keyframes": null
+              },
+              {
+                "id": "loopSpeed",
+                "label": "Speed",
+                "value": {
+                  "type": "scalar",
+                  "value": 0.1
+                },
+                "keyframes": null
+              },
+              {
+                "id": "octaves",
+                "label": "Octaves",
+                "value": {
+                  "type": "scalar",
+                  "value": 4
+                },
+                "keyframes": null
+              },
+              {
+                "id": "roughness",
+                "label": "Roughness",
+                "value": {
+                  "type": "scalar",
+                  "value": 0.5
+                },
+                "keyframes": null
+              },
+              {
+                "id": "contrast",
+                "label": "Contrast",
+                "value": {
+                  "type": "scalar",
+                  "value": 1
+                },
+                "keyframes": null
+              },
+              {
+                "id": "brightness",
+                "label": "Brightness",
+                "value": {
+                  "type": "scalar",
+                  "value": 0
+                },
+                "keyframes": null
+              }
+            ],
+            "ports": [
+              {
+                "id": "out",
+                "label": "Image",
+                "portType": "imageRgba16f",
+                "direction": "output"
+              },
+              {
+                "id": "scalar",
+                "label": "Value",
+                "portType": "scalar",
+                "direction": "output"
+              },
+              {
+                "id": "vec2",
+                "label": "Vector",
+                "portType": "vec2",
+                "direction": "output"
+              },
+              {
+                "id": "scalarField",
+                "label": "Scalar Field",
+                "portType": "scalarField",
+                "direction": "output"
+              },
+              {
+                "id": "vectorField",
+                "label": "Vector Field",
+                "portType": "vectorField",
+                "direction": "output"
+              }
+            ]
+          },
+          "92160c56-5d0f-4b8c-bca6-9aceb13e0f94": {
+            "id": "92160c56-5d0f-4b8c-bca6-9aceb13e0f94",
+            "nodeType": "ShapeDeform",
+            "label": "Shape Deform",
+            "bypassed": false,
+            "exposeChannels": false,
+            "link": null,
+            "params": [
+              {
+                "id": "mode",
+                "label": "Mode",
+                "value": {
+                  "type": "string",
+                  "value": "Normal"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "amplitude",
+                "label": "Amplitude",
+                "value": {
+                  "type": "vec2",
+                  "value": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "keyframes": null
+              },
+              {
+                "id": "source",
+                "label": "Source",
+                "value": {
+                  "type": "string",
+                  "value": "Field"
+                },
+                "keyframes": null
+              }
+            ],
+            "ports": [
+              {
+                "id": "shape_in",
+                "label": "Shape",
+                "portType": "shape",
+                "direction": "input"
+              },
+              {
+                "id": "field_in",
+                "label": "Field In",
+                "portType": "vectorField",
+                "direction": "input"
+              },
+              {
+                "id": "value_in",
+                "label": "Value In",
+                "portType": "vec2",
+                "direction": "input"
+              },
+              {
+                "id": "amplitude_in",
+                "label": "Amplitude",
+                "portType": "scalar",
+                "direction": "input"
+              },
+              {
+                "id": "out",
+                "label": "Shape",
+                "portType": "shape",
+                "direction": "output"
+              }
+            ]
+          },
+          "81c4cf9b-9feb-4b5c-9c79-f0b6d870a15a": {
+            "id": "81c4cf9b-9feb-4b5c-9c79-f0b6d870a15a",
+            "nodeType": "ResampleShape",
+            "label": "Resample Shape",
+            "bypassed": false,
+            "exposeChannels": false,
+            "link": null,
+            "params": [
+              {
+                "id": "mode",
+                "label": "Mode",
+                "value": {
+                  "type": "string",
+                  "value": "spacing"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "count",
+                "label": "Count",
+                "value": {
+                  "type": "scalar",
+                  "value": 32
+                },
+                "keyframes": null
+              },
+              {
+                "id": "spacing",
+                "label": "Spacing",
+                "value": {
+                  "type": "scalar",
+                  "value": 20
+                },
+                "keyframes": null
+              },
+              {
+                "id": "resampleType",
+                "label": "Type",
+                "value": {
+                  "type": "string",
+                  "value": "linear"
+                },
+                "keyframes": null
+              }
+            ],
+            "ports": [
+              {
+                "id": "shape_in",
+                "label": "Shape",
+                "portType": "shape",
+                "direction": "input"
+              },
+              {
+                "id": "out",
+                "label": "Shape",
+                "portType": "shape",
+                "direction": "output"
+              }
+            ]
+          },
+          "b87c6059-8802-4ddd-bf89-89fc6aa54cb6": {
+            "id": "b87c6059-8802-4ddd-bf89-89fc6aa54cb6",
+            "nodeType": "Noise",
+            "label": "Noise",
+            "bypassed": false,
+            "exposeChannels": false,
+            "link": null,
+            "params": [
+              {
+                "id": "noiseType",
+                "label": "Type",
+                "value": {
+                  "type": "string",
+                  "value": "Perlin"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "fbmMode",
+                "label": "Mode",
+                "value": {
+                  "type": "string",
+                  "value": "Standard"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "seed",
+                "label": "Seed",
+                "value": {
+                  "type": "scalar",
+                  "value": 0
+                },
+                "keyframes": null
+              },
+              {
+                "id": "scale",
+                "label": "Scale",
+                "value": {
+                  "type": "vec2",
+                  "value": {
+                    "x": 100,
+                    "y": 100
+                  }
+                },
+                "keyframes": null
+              },
+              {
+                "id": "offset",
+                "label": "Offset",
+                "value": {
+                  "type": "vec2",
+                  "value": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                "keyframes": null
+              },
+              {
+                "id": "evolution",
+                "label": "Evolution",
+                "value": {
+                  "type": "scalar",
+                  "value": 0
+                },
+                "keyframes": null
+              },
+              {
+                "id": "looping",
+                "label": "Looping",
+                "value": {
+                  "type": "boolean",
+                  "value": true
+                },
+                "keyframes": null
+              },
+              {
+                "id": "cycleDuration",
+                "label": "Cycle (frames)",
+                "value": {
+                  "type": "scalar",
+                  "value": 150
+                },
+                "keyframes": null
+              },
+              {
+                "id": "loopSpeed",
+                "label": "Speed",
+                "value": {
+                  "type": "scalar",
+                  "value": 0.1
+                },
+                "keyframes": null
+              },
+              {
+                "id": "octaves",
+                "label": "Octaves",
+                "value": {
+                  "type": "scalar",
+                  "value": 4
+                },
+                "keyframes": null
+              },
+              {
+                "id": "roughness",
+                "label": "Roughness",
+                "value": {
+                  "type": "scalar",
+                  "value": 0.5
+                },
+                "keyframes": null
+              },
+              {
+                "id": "contrast",
+                "label": "Contrast",
+                "value": {
+                  "type": "scalar",
+                  "value": 1
+                },
+                "keyframes": null
+              },
+              {
+                "id": "brightness",
+                "label": "Brightness",
+                "value": {
+                  "type": "scalar",
+                  "value": 0
+                },
+                "keyframes": null
+              }
+            ],
+            "ports": [
+              {
+                "id": "out",
+                "label": "Image",
+                "portType": "imageRgba16f",
+                "direction": "output"
+              },
+              {
+                "id": "scalar",
+                "label": "Value",
+                "portType": "scalar",
+                "direction": "output"
+              },
+              {
+                "id": "vec2",
+                "label": "Vector",
+                "portType": "vec2",
+                "direction": "output"
+              },
+              {
+                "id": "scalarField",
+                "label": "Scalar Field",
+                "portType": "scalarField",
+                "direction": "output"
+              },
+              {
+                "id": "vectorField",
+                "label": "Vector Field",
+                "portType": "vectorField",
+                "direction": "output"
+              }
+            ]
+          },
+          "587baf9a-2895-482d-8658-b6068fda11c4": {
+            "id": "587baf9a-2895-482d-8658-b6068fda11c4",
+            "nodeType": "Transform2D",
+            "label": "Transform 2D",
+            "bypassed": false,
+            "exposeChannels": false,
+            "link": null,
+            "params": [
+              {
+                "id": "positionMode",
+                "label": "Position Mode",
+                "value": {
+                  "type": "string",
+                  "value": "Pixels"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "positionAnchor",
+                "label": "Pin To",
+                "value": {
+                  "type": "string",
+                  "value": "Center"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "position",
+                "label": "Position",
+                "value": {
+                  "type": "vec2",
+                  "value": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                "keyframes": null
+              },
+              {
+                "id": "scale",
+                "label": "Scale",
+                "value": {
+                  "type": "vec2",
+                  "value": {
+                    "x": 1,
+                    "y": 1.5
+                  }
+                },
+                "keyframes": [
+                  {
+                    "frame": 0,
+                    "value": {
+                      "type": "vec2",
+                      "value": {
+                        "x": 0.1,
+                        "y": 0.1
+                      }
+                    },
+                    "interpolation": "bezier",
+                    "bezierOut": {
+                      "x": 0.23,
+                      "y": 1
+                    },
+                    "bezierIn": null,
+                    "handleMode": "free",
+                    "spatialTangentOut": null,
+                    "spatialTangentIn": null,
+                    "spatialMode": null
+                  },
+                  {
+                    "frame": 136,
+                    "value": {
+                      "type": "vec2",
+                      "value": {
+                        "x": 1,
+                        "y": 1.5
+                      }
+                    },
+                    "interpolation": "bezier",
+                    "bezierOut": null,
+                    "bezierIn": {
+                      "x": 0.32,
+                      "y": 1
+                    },
+                    "handleMode": "free",
+                    "spatialTangentOut": null,
+                    "spatialTangentIn": null,
+                    "spatialMode": null
+                  }
+                ]
+              },
+              {
+                "id": "rotation",
+                "label": "Rotation",
+                "value": {
+                  "type": "scalar",
+                  "value": 0
+                },
+                "keyframes": null
+              },
+              {
+                "id": "anchor",
+                "label": "Anchor",
+                "value": {
+                  "type": "vec2",
+                  "value": {
+                    "x": 0.5,
+                    "y": 0.5
+                  }
+                },
+                "keyframes": null
+              },
+              {
+                "id": "anchorSpace",
+                "label": "Anchor Space",
+                "value": {
+                  "type": "string",
+                  "value": "Comp"
+                },
+                "keyframes": null
+              }
+            ],
+            "ports": [
+              {
+                "id": "in",
+                "label": "Input",
+                "portType": "points",
+                "direction": "input"
+              },
+              {
+                "id": "out",
+                "label": "Output",
+                "portType": "points",
+                "direction": "output"
+              }
+            ]
+          },
+          "8066a5b8-c4b4-4ff1-91ad-628e755c3bdd": {
+            "id": "8066a5b8-c4b4-4ff1-91ad-628e755c3bdd",
+            "nodeType": "Gradient",
+            "label": "Gradient",
+            "bypassed": false,
+            "exposeChannels": false,
+            "link": null,
+            "params": [
+              {
+                "id": "ramp",
+                "label": "Gradient",
+                "value": {
+                  "type": "gradientRamp",
+                  "value": {
+                    "stops": [
+                      {
+                        "position": 0,
+                        "color": {
+                          "r": 0.15292615199615017,
+                          "g": 0.6307571363461468,
+                          "b": 0.35153259950043936,
+                          "a": 1
+                        }
+                      },
+                      {
+                        "position": 1,
+                        "color": {
+                          "r": 0.06847816984440017,
+                          "g": 0.2581828529215958,
+                          "b": 1,
+                          "a": 1
+                        }
+                      }
+                    ],
+                    "interpolation": "linear"
+                  }
+                },
+                "keyframes": null
+              },
+              {
+                "id": "mappingMode",
+                "label": "Mode",
+                "value": {
+                  "type": "string",
+                  "value": "Linear"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "position",
+                "label": "Position",
+                "value": {
+                  "type": "vec2",
+                  "value": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                "keyframes": null
+              },
+              {
+                "id": "scale",
+                "label": "Scale",
+                "value": {
+                  "type": "vec2",
+                  "value": {
+                    "x": 1,
+                    "y": 1
+                  }
+                },
+                "keyframes": null
+              },
+              {
+                "id": "rotation",
+                "label": "Rotation",
+                "value": {
+                  "type": "scalar",
+                  "value": 0
+                },
+                "keyframes": null
+              },
+              {
+                "id": "repeatMode",
+                "label": "Repeat",
+                "value": {
+                  "type": "string",
+                  "value": "Clamp"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "cycle",
+                "label": "Cycle",
+                "value": {
+                  "type": "scalar",
+                  "value": 0
+                },
+                "keyframes": null
+              },
+              {
+                "id": "uniformScale",
+                "label": "Uniform Scale",
+                "value": {
+                  "type": "boolean",
+                  "value": true
+                },
+                "keyframes": null
+              }
+            ],
+            "ports": [
+              {
+                "id": "out",
+                "label": "Image",
+                "portType": "imageRgba16f",
+                "direction": "output"
+              },
+              {
+                "id": "colorField",
+                "label": "Color Field",
+                "portType": "colorField",
+                "direction": "output"
+              },
+              {
+                "id": "scalarField",
+                "label": "Scalar Field",
+                "portType": "scalarField",
+                "direction": "output"
+              }
+            ]
+          },
+          "88f68591-fe73-4a92-8ac3-475d00cdff2b": {
+            "id": "88f68591-fe73-4a92-8ac3-475d00cdff2b",
+            "nodeType": "DrawPoints",
+            "label": "Draw Points",
+            "bypassed": false,
+            "exposeChannels": false,
+            "link": null,
+            "params": [
+              {
+                "id": "color",
+                "label": "Color",
+                "value": {
+                  "type": "color",
+                  "value": {
+                    "r": 0.8988448215457288,
+                    "g": 0.8988448215457288,
+                    "b": 0.8988448215457288,
+                    "a": 1
+                  }
+                },
+                "keyframes": null
+              },
+              {
+                "id": "pointSize",
+                "label": "Base Size",
+                "value": {
+                  "type": "scalar",
+                  "value": 5
+                },
+                "keyframes": null
+              }
+            ],
+            "ports": [
+              {
+                "id": "points_in",
+                "label": "Points",
+                "portType": "points",
+                "direction": "input"
+              },
+              {
+                "id": "out",
+                "label": "Output",
+                "portType": "imageRgba16f",
+                "direction": "output"
+              }
+            ]
+          },
+          "0c9cffc2-adf8-4b8d-bf40-2654e86c766d": {
+            "id": "0c9cffc2-adf8-4b8d-bf40-2654e86c766d",
+            "nodeType": "Merge",
+            "label": "Merge",
+            "bypassed": false,
+            "exposeChannels": false,
+            "link": null,
+            "params": [
+              {
+                "id": "blendMode",
+                "label": "Blend Mode",
+                "value": {
+                  "type": "string",
+                  "value": "Normal"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "opacity",
+                "label": "Opacity",
+                "value": {
+                  "type": "scalar",
+                  "value": 1
+                },
+                "keyframes": null
+              }
+            ],
+            "ports": [
+              {
+                "id": "inputs",
+                "label": "Inputs",
+                "portType": "imageRgba16f",
+                "direction": "input",
+                "multi": true
+              },
+              {
+                "id": "out",
+                "label": "Output",
+                "portType": "imageRgba16f",
+                "direction": "output"
+              }
+            ]
+          },
+          "0f538fc5-7665-49c5-931c-c3cf51fc9a96": {
+            "id": "0f538fc5-7665-49c5-931c-c3cf51fc9a96",
+            "nodeType": "PointDeform",
+            "label": "Point Deform",
+            "bypassed": false,
+            "exposeChannels": false,
+            "link": null,
+            "params": [
+              {
+                "id": "mode",
+                "label": "Mode",
+                "value": {
+                  "type": "string",
+                  "value": "XY"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "amplitude",
+                "label": "Amplitude",
+                "value": {
+                  "type": "vec2",
+                  "value": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "keyframes": null
+              },
+              {
+                "id": "source",
+                "label": "Source",
+                "value": {
+                  "type": "string",
+                  "value": "Field"
+                },
+                "keyframes": null
+              }
+            ],
+            "ports": [
+              {
+                "id": "points_in",
+                "label": "Points",
+                "portType": "points",
+                "direction": "input"
+              },
+              {
+                "id": "field_in",
+                "label": "Field In",
+                "portType": "vectorField",
+                "direction": "input"
+              },
+              {
+                "id": "value_in",
+                "label": "Value In",
+                "portType": "vec2",
+                "direction": "input"
+              },
+              {
+                "id": "amplitude_in",
+                "label": "Amplitude",
+                "portType": "scalar",
+                "direction": "input"
+              },
+              {
+                "id": "out",
+                "label": "Points",
+                "portType": "points",
+                "direction": "output"
+              }
+            ]
+          },
+          "43574ed6-9ce7-458a-9be8-0d88d589ed63": {
+            "id": "43574ed6-9ce7-458a-9be8-0d88d589ed63",
+            "nodeType": "LabelPoints",
+            "label": "Label Points",
+            "bypassed": false,
+            "exposeChannels": false,
+            "link": null,
+            "params": [
+              {
+                "id": "template",
+                "label": "Template",
+                "value": {
+                  "type": "string",
+                  "value": "{x},{y}"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "decimals",
+                "label": "Decimals",
+                "value": {
+                  "type": "scalar",
+                  "value": 0
+                },
+                "keyframes": null
+              },
+              {
+                "id": "fontFamily",
+                "label": "Font",
+                "value": {
+                  "type": "string",
+                  "value": "IBM Plex Mono"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "fontWeight",
+                "label": "Weight",
+                "value": {
+                  "type": "scalar",
+                  "value": 400
+                },
+                "keyframes": null
+              },
+              {
+                "id": "fontSize",
+                "label": "Size",
+                "value": {
+                  "type": "scalar",
+                  "value": 20
+                },
+                "keyframes": null
+              },
+              {
+                "id": "offset",
+                "label": "Offset",
+                "value": {
+                  "type": "vec2",
+                  "value": {
+                    "x": 12.1,
+                    "y": 0
+                  }
+                },
+                "keyframes": null
+              },
+              {
+                "id": "anchor",
+                "label": "Anchor",
+                "value": {
+                  "type": "string",
+                  "value": "Left"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "maskAttribute",
+                "label": "Mask Attribute",
+                "value": {
+                  "type": "string",
+                  "value": ""
+                },
+                "keyframes": null
+              }
+            ],
+            "ports": [
+              {
+                "id": "points_in",
+                "label": "Points",
+                "portType": "points",
+                "direction": "input"
+              },
+              {
+                "id": "mask_in",
+                "label": "Mask",
+                "portType": "scalarField",
+                "direction": "input"
+              },
+              {
+                "id": "out",
+                "label": "Shape",
+                "portType": "shape",
+                "direction": "output"
+              }
+            ]
+          },
+          "a38c6fb6-544a-43d2-aafe-4e2c5f5cce5f": {
+            "id": "a38c6fb6-544a-43d2-aafe-4e2c5f5cce5f",
+            "nodeType": "DrawShape",
+            "label": "Draw Shape",
+            "bypassed": false,
+            "exposeChannels": false,
+            "link": null,
+            "params": [
+              {
+                "id": "fillEnabled",
+                "label": "Fill",
+                "value": {
+                  "type": "boolean",
+                  "value": true
+                },
+                "keyframes": null
+              },
+              {
+                "id": "fillColor",
+                "label": "Fill Color",
+                "value": {
+                  "type": "color",
+                  "value": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  }
+                },
+                "keyframes": null
+              },
+              {
+                "id": "fillOpacity",
+                "label": "Fill Opacity",
+                "value": {
+                  "type": "scalar",
+                  "value": 1
+                },
+                "keyframes": null
+              },
+              {
+                "id": "fillRule",
+                "label": "Fill Rule",
+                "value": {
+                  "type": "string",
+                  "value": "nonZero"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "fillUvMode",
+                "label": "Fill UV",
+                "value": {
+                  "type": "string",
+                  "value": "Canvas"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "strokeEnabled",
+                "label": "Stroke",
+                "value": {
+                  "type": "boolean",
+                  "value": false
+                },
+                "keyframes": null
+              },
+              {
+                "id": "strokeColor",
+                "label": "Stroke Color",
+                "value": {
+                  "type": "color",
+                  "value": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  }
+                },
+                "keyframes": null
+              },
+              {
+                "id": "strokeWidth",
+                "label": "Stroke Width",
+                "value": {
+                  "type": "scalar",
+                  "value": 2
+                },
+                "keyframes": null
+              },
+              {
+                "id": "strokeOpacity",
+                "label": "Stroke Opacity",
+                "value": {
+                  "type": "scalar",
+                  "value": 1
+                },
+                "keyframes": null
+              },
+              {
+                "id": "strokeJoin",
+                "label": "Join",
+                "value": {
+                  "type": "string",
+                  "value": "miter"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "strokeCap",
+                "label": "Cap",
+                "value": {
+                  "type": "string",
+                  "value": "butt"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "miterLimit",
+                "label": "Miter Limit",
+                "value": {
+                  "type": "scalar",
+                  "value": 4
+                },
+                "keyframes": null
+              },
+              {
+                "id": "paintOrder",
+                "label": "Paint Order",
+                "value": {
+                  "type": "string",
+                  "value": "StrokeOverFill"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "strokeUvMode",
+                "label": "Stroke UV",
+                "value": {
+                  "type": "string",
+                  "value": "Canvas"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "dashEnabled",
+                "label": "Dashed",
+                "value": {
+                  "type": "boolean",
+                  "value": false
+                },
+                "keyframes": null
+              },
+              {
+                "id": "dash",
+                "label": "Dash",
+                "value": {
+                  "type": "scalar",
+                  "value": 12
+                },
+                "keyframes": null
+              },
+              {
+                "id": "gap",
+                "label": "Gap",
+                "value": {
+                  "type": "scalar",
+                  "value": 6
+                },
+                "keyframes": null
+              },
+              {
+                "id": "dashOffset",
+                "label": "Offset",
+                "value": {
+                  "type": "scalar",
+                  "value": 0
+                },
+                "keyframes": null
+              },
+              {
+                "id": "taperStart",
+                "label": "Taper Start",
+                "value": {
+                  "type": "scalar",
+                  "value": 1
+                },
+                "keyframes": null
+              },
+              {
+                "id": "taperEnd",
+                "label": "Taper End",
+                "value": {
+                  "type": "scalar",
+                  "value": 1
+                },
+                "keyframes": null
+              },
+              {
+                "id": "taperStartLength",
+                "label": "Start Length",
+                "value": {
+                  "type": "scalar",
+                  "value": 0.5
+                },
+                "keyframes": null
+              },
+              {
+                "id": "taperEndLength",
+                "label": "End Length",
+                "value": {
+                  "type": "scalar",
+                  "value": 0.5
+                },
+                "keyframes": null
+              }
+            ],
+            "ports": [
+              {
+                "id": "shape_in",
+                "label": "Shape",
+                "portType": "shape",
+                "direction": "input"
+              },
+              {
+                "id": "fill_source",
+                "label": "Fill Source",
+                "portType": "imageRgba16f",
+                "direction": "input"
+              },
+              {
+                "id": "stroke_source",
+                "label": "Stroke Source",
+                "portType": "imageRgba16f",
+                "direction": "input"
+              },
+              {
+                "id": "out",
+                "label": "Output",
+                "portType": "imageRgba16f",
+                "direction": "output"
+              }
+            ]
+          },
+          "f8daff67-c30a-45eb-8404-c97e48382f3a": {
+            "id": "f8daff67-c30a-45eb-8404-c97e48382f3a",
+            "nodeType": "PointDelete",
+            "label": "Point Delete",
+            "bypassed": false,
+            "exposeChannels": false,
+            "link": null,
+            "params": [
+              {
+                "id": "attribute",
+                "label": "Attribute",
+                "value": {
+                  "type": "string",
+                  "value": "selection"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "threshold",
+                "label": "Threshold",
+                "value": {
+                  "type": "scalar",
+                  "value": 0.1
+                },
+                "keyframes": [
+                  {
+                    "frame": 0,
+                    "value": {
+                      "type": "scalar",
+                      "value": 0
+                    },
+                    "interpolation": "linear",
+                    "bezierOut": null,
+                    "bezierIn": null,
+                    "handleMode": null,
+                    "spatialTangentOut": null,
+                    "spatialTangentIn": null,
+                    "spatialMode": null
+                  },
+                  {
+                    "frame": 150,
+                    "value": {
+                      "type": "scalar",
+                      "value": 0.8
+                    },
+                    "interpolation": "linear",
+                    "bezierOut": null,
+                    "bezierIn": null,
+                    "handleMode": null,
+                    "spatialTangentOut": null,
+                    "spatialTangentIn": null,
+                    "spatialMode": null
+                  },
+                  {
+                    "frame": 199,
+                    "value": {
+                      "type": "scalar",
+                      "value": 0.8
+                    },
+                    "interpolation": "linear",
+                    "bezierOut": null,
+                    "bezierIn": null,
+                    "handleMode": null,
+                    "spatialTangentOut": null,
+                    "spatialTangentIn": null,
+                    "spatialMode": null
+                  },
+                  {
+                    "frame": 296,
+                    "value": {
+                      "type": "scalar",
+                      "value": 0.1
+                    },
+                    "interpolation": "linear",
+                    "bezierOut": null,
+                    "bezierIn": null,
+                    "handleMode": null,
+                    "spatialTangentOut": null,
+                    "spatialTangentIn": null,
+                    "spatialMode": null
+                  }
+                ]
+              },
+              {
+                "id": "invert",
+                "label": "Invert",
+                "value": {
+                  "type": "boolean",
+                  "value": false
+                },
+                "keyframes": null
+              }
+            ],
+            "ports": [
+              {
+                "id": "in",
+                "label": "Points",
+                "portType": "points",
+                "direction": "input"
+              },
+              {
+                "id": "mask_in",
+                "label": "Mask",
+                "portType": "scalarField",
+                "direction": "input"
+              },
+              {
+                "id": "out",
+                "label": "Points",
+                "portType": "points",
+                "direction": "output"
+              }
+            ]
+          },
+          "fa2848fd-0f31-4173-9876-860cb6e7d5ad": {
+            "id": "fa2848fd-0f31-4173-9876-860cb6e7d5ad",
+            "nodeType": "Random",
+            "label": "Random",
+            "bypassed": false,
+            "exposeChannels": false,
+            "link": null,
+            "params": [
+              {
+                "id": "seed",
+                "label": "Seed",
+                "value": {
+                  "type": "scalar",
+                  "value": 0
+                },
+                "keyframes": null
+              },
+              {
+                "id": "scale",
+                "label": "Scale",
+                "value": {
+                  "type": "vec2",
+                  "value": {
+                    "x": 100,
+                    "y": 100
+                  }
+                },
+                "keyframes": null
+              },
+              {
+                "id": "evolution",
+                "label": "Evolution",
+                "value": {
+                  "type": "scalar",
+                  "value": 0
+                },
+                "keyframes": null
+              }
+            ],
+            "ports": [
+              {
+                "id": "out",
+                "label": "Image",
+                "portType": "imageRgba16f",
+                "direction": "output"
+              },
+              {
+                "id": "scalar",
+                "label": "Value",
+                "portType": "scalar",
+                "direction": "output"
+              },
+              {
+                "id": "vec2",
+                "label": "Vector",
+                "portType": "vec2",
+                "direction": "output"
+              },
+              {
+                "id": "scalarField",
+                "label": "Scalar Field",
+                "portType": "scalarField",
+                "direction": "output"
+              },
+              {
+                "id": "vectorField",
+                "label": "Vector Field",
+                "portType": "vectorField",
+                "direction": "output"
+              }
+            ]
+          },
+          "470d5d5b-b0d8-4bb9-aa21-1557402dbecc": {
+            "id": "470d5d5b-b0d8-4bb9-aa21-1557402dbecc",
+            "nodeType": "Glow",
+            "label": "Glow",
+            "bypassed": false,
+            "exposeChannels": false,
+            "link": null,
+            "params": [
+              {
+                "id": "threshold",
+                "label": "Threshold",
+                "value": {
+                  "type": "scalar",
+                  "value": 0.2
+                },
+                "keyframes": null
+              },
+              {
+                "id": "intensity",
+                "label": "Intensity",
+                "value": {
+                  "type": "scalar",
+                  "value": 1
+                },
+                "keyframes": null
+              },
+              {
+                "id": "blur",
+                "label": "Radius",
+                "value": {
+                  "type": "scalar",
+                  "value": 300
+                },
+                "keyframes": null
+              },
+              {
+                "id": "falloff",
+                "label": "Falloff",
+                "value": {
+                  "type": "string",
+                  "value": "Long Tail"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "stretch",
+                "label": "Stretch",
+                "value": {
+                  "type": "vec2",
+                  "value": {
+                    "x": 2,
+                    "y": 0.5
+                  }
+                },
+                "keyframes": null
+              },
+              {
+                "id": "color",
+                "label": "Color",
+                "value": {
+                  "type": "color",
+                  "value": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  }
+                },
+                "keyframes": null
+              },
+              {
+                "id": "blendMode",
+                "label": "Blend Mode",
+                "value": {
+                  "type": "string",
+                  "value": "Add"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "output",
+                "label": "Output",
+                "value": {
+                  "type": "string",
+                  "value": "Composite"
+                },
+                "keyframes": null
+              }
+            ],
+            "ports": [
+              {
+                "id": "in",
+                "label": "Input",
+                "portType": "imageRgba16f",
+                "direction": "input"
+              },
+              {
+                "id": "out",
+                "label": "Output",
+                "portType": "imageRgba16f",
+                "direction": "output"
+              }
+            ]
+          },
+          "80f9bf8a-432b-4551-b77c-af3d2528e6a1": {
+            "id": "80f9bf8a-432b-4551-b77c-af3d2528e6a1",
+            "nodeType": "DrawInstances",
+            "label": "Draw Instances",
+            "bypassed": false,
+            "exposeChannels": false,
+            "link": null,
+            "params": [
+              {
+                "id": "scale",
+                "label": "Scale",
+                "value": {
+                  "type": "scalar",
+                  "value": 1
+                },
+                "keyframes": null
+              },
+              {
+                "id": "rotation",
+                "label": "Rotation",
+                "value": {
+                  "type": "scalar",
+                  "value": 0
+                },
+                "keyframes": null
+              },
+              {
+                "id": "opacity",
+                "label": "Opacity",
+                "value": {
+                  "type": "scalar",
+                  "value": 1
+                },
+                "keyframes": null
+              },
+              {
+                "id": "anchor",
+                "label": "Anchor",
+                "value": {
+                  "type": "vec2",
+                  "value": {
+                    "x": 0.5,
+                    "y": 0.5
+                  }
+                },
+                "keyframes": null
+              },
+              {
+                "id": "fitMode",
+                "label": "Fit Mode",
+                "value": {
+                  "type": "string",
+                  "value": "None"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "cellSize",
+                "label": "Cell Size",
+                "value": {
+                  "type": "vec2",
+                  "value": {
+                    "x": 200,
+                    "y": 200
+                  }
+                },
+                "keyframes": null
+              },
+              {
+                "id": "cornerRadius",
+                "label": "Corner Radius",
+                "value": {
+                  "type": "scalar",
+                  "value": 0
+                },
+                "keyframes": null
+              },
+              {
+                "id": "selectionMode",
+                "label": "Selection Mode",
+                "value": {
+                  "type": "string",
+                  "value": "Sequential"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "seed",
+                "label": "Seed",
+                "value": {
+                  "type": "scalar",
+                  "value": 0
+                },
+                "keyframes": null
+              },
+              {
+                "id": "group",
+                "label": "Group",
+                "value": {
+                  "type": "string",
+                  "value": ""
+                },
+                "keyframes": null
+              },
+              {
+                "id": "groupThreshold",
+                "label": "Group Threshold",
+                "value": {
+                  "type": "scalar",
+                  "value": 0.5
+                },
+                "keyframes": null
+              },
+              {
+                "id": "timeOffsetMode",
+                "label": "Time Offset",
+                "value": {
+                  "type": "string",
+                  "value": "Off"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "offsetFrames",
+                "label": "Offset Frames",
+                "value": {
+                  "type": "scalar",
+                  "value": 2
+                },
+                "keyframes": null
+              },
+              {
+                "id": "offsetAttribute",
+                "label": "Offset Attribute",
+                "value": {
+                  "type": "string",
+                  "value": "index"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "maxTimeSamples",
+                "label": "Max Time Samples",
+                "value": {
+                  "type": "scalar",
+                  "value": 8
+                },
+                "keyframes": null
+              },
+              {
+                "id": "perClone",
+                "label": "Per Clone",
+                "value": {
+                  "type": "string",
+                  "value": "Auto"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "maxClones",
+                "label": "Max Clones",
+                "value": {
+                  "type": "scalar",
+                  "value": 32
+                },
+                "keyframes": null
+              }
+            ],
+            "ports": [
+              {
+                "id": "in",
+                "label": "Sources",
+                "portType": "imageRgba16f",
+                "direction": "input",
+                "multi": true
+              },
+              {
+                "id": "points_in",
+                "label": "Points",
+                "portType": "points",
+                "direction": "input"
+              },
+              {
+                "id": "out",
+                "label": "Output",
+                "portType": "imageRgba16f",
+                "direction": "output"
+              }
+            ]
+          },
+          "87d009fa-be01-490a-bac1-891edf22e4d4": {
+            "id": "87d009fa-be01-490a-bac1-891edf22e4d4",
+            "nodeType": "Rectangle",
+            "label": "Rectangle",
+            "bypassed": false,
+            "exposeChannels": false,
+            "link": null,
+            "params": [
+              {
+                "id": "width",
+                "label": "Width",
+                "value": {
+                  "type": "scalar",
+                  "value": 140
+                },
+                "keyframes": null
+              },
+              {
+                "id": "height",
+                "label": "Height",
+                "value": {
+                  "type": "scalar",
+                  "value": 30
+                },
+                "keyframes": null
+              },
+              {
+                "id": "cornerRadius",
+                "label": "Corner Radius",
+                "value": {
+                  "type": "scalar",
+                  "value": 0
+                },
+                "keyframes": null
+              }
+            ],
+            "ports": [
+              {
+                "id": "out",
+                "label": "Shape",
+                "portType": "shape",
+                "direction": "output"
+              }
+            ]
+          },
+          "ffd9ec5c-af05-419e-94f3-102998b56388": {
+            "id": "ffd9ec5c-af05-419e-94f3-102998b56388",
+            "nodeType": "DrawShape",
+            "label": "Draw Shape",
+            "bypassed": false,
+            "exposeChannels": false,
+            "link": null,
+            "params": [
+              {
+                "id": "fillEnabled",
+                "label": "Fill",
+                "value": {
+                  "type": "boolean",
+                  "value": true
+                },
+                "keyframes": null
+              },
+              {
+                "id": "fillColor",
+                "label": "Fill Color",
+                "value": {
+                  "type": "color",
+                  "value": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 1
+                  }
+                },
+                "keyframes": null
+              },
+              {
+                "id": "fillOpacity",
+                "label": "Fill Opacity",
+                "value": {
+                  "type": "scalar",
+                  "value": 1
+                },
+                "keyframes": null
+              },
+              {
+                "id": "fillRule",
+                "label": "Fill Rule",
+                "value": {
+                  "type": "string",
+                  "value": "nonZero"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "fillUvMode",
+                "label": "Fill UV",
+                "value": {
+                  "type": "string",
+                  "value": "Canvas"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "strokeEnabled",
+                "label": "Stroke",
+                "value": {
+                  "type": "boolean",
+                  "value": false
+                },
+                "keyframes": null
+              },
+              {
+                "id": "strokeColor",
+                "label": "Stroke Color",
+                "value": {
+                  "type": "color",
+                  "value": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  }
+                },
+                "keyframes": null
+              },
+              {
+                "id": "strokeWidth",
+                "label": "Stroke Width",
+                "value": {
+                  "type": "scalar",
+                  "value": 2
+                },
+                "keyframes": null
+              },
+              {
+                "id": "strokeOpacity",
+                "label": "Stroke Opacity",
+                "value": {
+                  "type": "scalar",
+                  "value": 1
+                },
+                "keyframes": null
+              },
+              {
+                "id": "strokeJoin",
+                "label": "Join",
+                "value": {
+                  "type": "string",
+                  "value": "miter"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "strokeCap",
+                "label": "Cap",
+                "value": {
+                  "type": "string",
+                  "value": "butt"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "miterLimit",
+                "label": "Miter Limit",
+                "value": {
+                  "type": "scalar",
+                  "value": 4
+                },
+                "keyframes": null
+              },
+              {
+                "id": "paintOrder",
+                "label": "Paint Order",
+                "value": {
+                  "type": "string",
+                  "value": "StrokeOverFill"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "strokeUvMode",
+                "label": "Stroke UV",
+                "value": {
+                  "type": "string",
+                  "value": "Canvas"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "dashEnabled",
+                "label": "Dashed",
+                "value": {
+                  "type": "boolean",
+                  "value": false
+                },
+                "keyframes": null
+              },
+              {
+                "id": "dash",
+                "label": "Dash",
+                "value": {
+                  "type": "scalar",
+                  "value": 12
+                },
+                "keyframes": null
+              },
+              {
+                "id": "gap",
+                "label": "Gap",
+                "value": {
+                  "type": "scalar",
+                  "value": 6
+                },
+                "keyframes": null
+              },
+              {
+                "id": "dashOffset",
+                "label": "Offset",
+                "value": {
+                  "type": "scalar",
+                  "value": 0
+                },
+                "keyframes": null
+              },
+              {
+                "id": "taperStart",
+                "label": "Taper Start",
+                "value": {
+                  "type": "scalar",
+                  "value": 1
+                },
+                "keyframes": null
+              },
+              {
+                "id": "taperEnd",
+                "label": "Taper End",
+                "value": {
+                  "type": "scalar",
+                  "value": 1
+                },
+                "keyframes": null
+              },
+              {
+                "id": "taperStartLength",
+                "label": "Start Length",
+                "value": {
+                  "type": "scalar",
+                  "value": 0.5
+                },
+                "keyframes": null
+              },
+              {
+                "id": "taperEndLength",
+                "label": "End Length",
+                "value": {
+                  "type": "scalar",
+                  "value": 0.5
+                },
+                "keyframes": null
+              }
+            ],
+            "ports": [
+              {
+                "id": "shape_in",
+                "label": "Shape",
+                "portType": "shape",
+                "direction": "input"
+              },
+              {
+                "id": "fill_source",
+                "label": "Fill Source",
+                "portType": "imageRgba16f",
+                "direction": "input"
+              },
+              {
+                "id": "stroke_source",
+                "label": "Stroke Source",
+                "portType": "imageRgba16f",
+                "direction": "input"
+              },
+              {
+                "id": "out",
+                "label": "Output",
+                "portType": "imageRgba16f",
+                "direction": "output"
+              }
+            ]
+          },
+          "e0c60869-dc0b-4cad-8dbf-bbaed36ac90d": {
+            "id": "e0c60869-dc0b-4cad-8dbf-bbaed36ac90d",
+            "nodeType": "Transform2D",
+            "label": "Transform 2D",
+            "bypassed": false,
+            "exposeChannels": false,
+            "link": null,
+            "params": [
+              {
+                "id": "positionMode",
+                "label": "Position Mode",
+                "value": {
+                  "type": "string",
+                  "value": "Pixels"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "positionAnchor",
+                "label": "Pin To",
+                "value": {
+                  "type": "string",
+                  "value": "Center"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "position",
+                "label": "Position",
+                "value": {
+                  "type": "vec2",
+                  "value": {
+                    "x": 60,
+                    "y": 0
+                  }
+                },
+                "keyframes": null
+              },
+              {
+                "id": "scale",
+                "label": "Scale",
+                "value": {
+                  "type": "vec2",
+                  "value": {
+                    "x": 1,
+                    "y": 1
+                  }
+                },
+                "keyframes": null
+              },
+              {
+                "id": "rotation",
+                "label": "Rotation",
+                "value": {
+                  "type": "scalar",
+                  "value": 0
+                },
+                "keyframes": null
+              },
+              {
+                "id": "anchor",
+                "label": "Anchor",
+                "value": {
+                  "type": "vec2",
+                  "value": {
+                    "x": 0.5,
+                    "y": 0.5
+                  }
+                },
+                "keyframes": null
+              },
+              {
+                "id": "anchorSpace",
+                "label": "Anchor Space",
+                "value": {
+                  "type": "string",
+                  "value": "Content"
+                },
+                "keyframes": null
+              }
+            ],
+            "ports": [
+              {
+                "id": "in",
+                "label": "Input",
+                "portType": "shape",
+                "direction": "input"
+              },
+              {
+                "id": "out",
+                "label": "Output",
+                "portType": "shape",
+                "direction": "output"
+              }
+            ]
+          },
+          "5dde67b4-10d7-4a78-8fc4-b5f342cf66f0": {
+            "id": "5dde67b4-10d7-4a78-8fc4-b5f342cf66f0",
+            "nodeType": "ChromaticAberration",
+            "label": "Chromatic Aberration",
+            "bypassed": false,
+            "exposeChannels": false,
+            "link": null,
+            "params": [
+              {
+                "id": "amount",
+                "label": "Amount",
+                "value": {
+                  "type": "scalar",
+                  "value": 3
+                },
+                "keyframes": null
+              },
+              {
+                "id": "mode",
+                "label": "Mode",
+                "value": {
+                  "type": "string",
+                  "value": "Radial"
+                },
+                "keyframes": null
+              },
+              {
+                "id": "angle",
+                "label": "Angle",
+                "value": {
+                  "type": "scalar",
+                  "value": 0
+                },
+                "keyframes": null
+              },
+              {
+                "id": "center",
+                "label": "Center",
+                "value": {
+                  "type": "vec2",
+                  "value": {
+                    "x": 0.5,
+                    "y": 0.5
+                  }
+                },
+                "keyframes": null
+              }
+            ],
+            "ports": [
+              {
+                "id": "in",
+                "label": "Input",
+                "portType": "imageRgba16f",
+                "direction": "input"
+              },
+              {
+                "id": "out",
+                "label": "Output",
+                "portType": "imageRgba16f",
+                "direction": "output"
+              }
+            ]
+          }
+        },
+        "edges": [
+          {
+            "id": "3bfc08ab-cf61-48ca-8edf-c2c0cc2f4f81",
+            "fromNode": "426b845c-23fd-491d-83b7-683ca098687e",
+            "fromPort": "out",
+            "toNode": "07da50cc-f017-432c-b091-ec46a0ec724f",
+            "toPort": "points_in"
+          },
+          {
+            "id": "8f2b7d3f-e527-4cdb-bd64-40fe0da0d5b7",
+            "fromNode": "8ff3e149-05c3-4f6f-a59b-14ad53e25e27",
+            "fromPort": "scalarField",
+            "toNode": "07da50cc-f017-432c-b091-ec46a0ec724f",
+            "toPort": "field_in"
+          },
+          {
+            "id": "b17caf8b-9290-4811-9f51-9d0acd2986d7",
+            "fromNode": "b87c6059-8802-4ddd-bf89-89fc6aa54cb6",
+            "fromPort": "scalarField",
+            "toNode": "92160c56-5d0f-4b8c-bca6-9aceb13e0f94",
+            "toPort": "field_in"
+          },
+          {
+            "id": "2136fcf8-5ae3-430c-bd72-1ee7d201c6bd",
+            "fromNode": "81c4cf9b-9feb-4b5c-9c79-f0b6d870a15a",
+            "fromPort": "out",
+            "toNode": "92160c56-5d0f-4b8c-bca6-9aceb13e0f94",
+            "toPort": "shape_in"
+          },
+          {
+            "id": "9f3ab266-6391-45be-b828-17118ec86a67",
+            "fromNode": "a17c95ef-c192-4600-a7ac-864f21e71742",
+            "fromPort": "out",
+            "toNode": "426b845c-23fd-491d-83b7-683ca098687e",
+            "toPort": "shape_in"
+          },
+          {
+            "id": "25152a91-f287-4342-a637-1fd053171137",
+            "fromNode": "07da50cc-f017-432c-b091-ec46a0ec724f",
+            "fromPort": "out",
+            "toNode": "587baf9a-2895-482d-8658-b6068fda11c4",
+            "toPort": "in"
+          },
+          {
+            "id": "2d488a40-10eb-4c34-b316-02f88214bd40",
+            "fromNode": "587baf9a-2895-482d-8658-b6068fda11c4",
+            "fromPort": "out",
+            "toNode": "42586a60-248c-42be-964a-d0c0c457fa82",
+            "toPort": "points_in"
+          },
+          {
+            "id": "19001e66-5447-41d0-b4d7-018381b011b4",
+            "fromNode": "8066a5b8-c4b4-4ff1-91ad-628e755c3bdd",
+            "fromPort": "colorField",
+            "toNode": "ea2c8b14-c4ec-407a-877f-3975b5bcd474",
+            "toPort": "stroke_source"
+          },
+          {
+            "id": "0645902d-7a36-44a7-8aa8-beaf1ef501ea",
+            "fromNode": "92160c56-5d0f-4b8c-bca6-9aceb13e0f94",
+            "fromPort": "out",
+            "toNode": "ea2c8b14-c4ec-407a-877f-3975b5bcd474",
+            "toPort": "shape_in"
+          },
+          {
+            "id": "5d9621c3-7a4b-4dc6-95f9-80d3e3cdcf00",
+            "fromNode": "42586a60-248c-42be-964a-d0c0c457fa82",
+            "fromPort": "out",
+            "toNode": "81c4cf9b-9feb-4b5c-9c79-f0b6d870a15a",
+            "toPort": "shape_in"
+          },
+          {
+            "id": "99ef35f7-b069-4f0f-b5ba-3c3559e637ba",
+            "fromNode": "587baf9a-2895-482d-8658-b6068fda11c4",
+            "fromPort": "out",
+            "toNode": "0f538fc5-7665-49c5-931c-c3cf51fc9a96",
+            "toPort": "points_in"
+          },
+          {
+            "id": "3ffcde11-3563-469f-8e03-2c70d2840354",
+            "fromNode": "0f538fc5-7665-49c5-931c-c3cf51fc9a96",
+            "fromPort": "out",
+            "toNode": "88f68591-fe73-4a92-8ac3-475d00cdff2b",
+            "toPort": "points_in"
+          },
+          {
+            "id": "3d2c9556-d579-41b7-8b75-576a575372d0",
+            "fromNode": "b87c6059-8802-4ddd-bf89-89fc6aa54cb6",
+            "fromPort": "scalarField",
+            "toNode": "0f538fc5-7665-49c5-931c-c3cf51fc9a96",
+            "toPort": "field_in"
+          },
+          {
+            "id": "e7af1678-4c0f-4030-a1a7-d3ed9d400c5f",
+            "fromNode": "43574ed6-9ce7-458a-9be8-0d88d589ed63",
+            "fromPort": "out",
+            "toNode": "a38c6fb6-544a-43d2-aafe-4e2c5f5cce5f",
+            "toPort": "shape_in"
+          },
+          {
+            "id": "4aad9949-ba1e-4416-b961-e99fd84cfd58",
+            "fromNode": "88f68591-fe73-4a92-8ac3-475d00cdff2b",
+            "fromPort": "out",
+            "toNode": "0c9cffc2-adf8-4b8d-bf40-2654e86c766d",
+            "toPort": "inputs",
+            "order": 3
+          },
+          {
+            "id": "eabe90ae-83a3-410d-afef-28ef5724498c",
+            "fromNode": "0f538fc5-7665-49c5-931c-c3cf51fc9a96",
+            "fromPort": "out",
+            "toNode": "f8daff67-c30a-45eb-8404-c97e48382f3a",
+            "toPort": "in"
+          },
+          {
+            "id": "6fc0d03b-36f2-4e9f-87fd-315fe57d934e",
+            "fromNode": "f8daff67-c30a-45eb-8404-c97e48382f3a",
+            "fromPort": "out",
+            "toNode": "43574ed6-9ce7-458a-9be8-0d88d589ed63",
+            "toPort": "points_in"
+          },
+          {
+            "id": "7d53c83e-97f2-4ba0-8491-5ab7509e3497",
+            "fromNode": "fa2848fd-0f31-4173-9876-860cb6e7d5ad",
+            "fromPort": "scalarField",
+            "toNode": "f8daff67-c30a-45eb-8404-c97e48382f3a",
+            "toPort": "mask_in"
+          },
+          {
+            "id": "f8c01aa7-e8ab-4b7b-840c-852b5f3577e9",
+            "fromNode": "ea2c8b14-c4ec-407a-877f-3975b5bcd474",
+            "fromPort": "out",
+            "toNode": "470d5d5b-b0d8-4bb9-aa21-1557402dbecc",
+            "toPort": "in"
+          },
+          {
+            "id": "323564b1-0cc9-4332-aeff-51ce02af3837",
+            "fromNode": "470d5d5b-b0d8-4bb9-aa21-1557402dbecc",
+            "fromPort": "out",
+            "toNode": "0c9cffc2-adf8-4b8d-bf40-2654e86c766d",
+            "toPort": "inputs",
+            "order": 0
+          },
+          {
+            "id": "1449f653-3c0c-41d7-b7aa-21f632c7baec",
+            "fromNode": "f8daff67-c30a-45eb-8404-c97e48382f3a",
+            "fromPort": "out",
+            "toNode": "80f9bf8a-432b-4551-b77c-af3d2528e6a1",
+            "toPort": "points_in"
+          },
+          {
+            "id": "085ff527-b89c-428b-bd47-270f989756b9",
+            "fromNode": "ffd9ec5c-af05-419e-94f3-102998b56388",
+            "fromPort": "out",
+            "toNode": "80f9bf8a-432b-4551-b77c-af3d2528e6a1",
+            "toPort": "in",
+            "order": 0
+          },
+          {
+            "id": "6999f96f-1ee6-4e63-a64b-4b8ef2e7779c",
+            "fromNode": "80f9bf8a-432b-4551-b77c-af3d2528e6a1",
+            "fromPort": "out",
+            "toNode": "0c9cffc2-adf8-4b8d-bf40-2654e86c766d",
+            "toPort": "inputs",
+            "order": 1
+          },
+          {
+            "id": "4c250034-d096-4a77-9041-79fb98fb70ea",
+            "fromNode": "87d009fa-be01-490a-bac1-891edf22e4d4",
+            "fromPort": "out",
+            "toNode": "e0c60869-dc0b-4cad-8dbf-bbaed36ac90d",
+            "toPort": "in"
+          },
+          {
+            "id": "ea882cbc-87ca-4a1c-a1ec-6cf126c57f33",
+            "fromNode": "e0c60869-dc0b-4cad-8dbf-bbaed36ac90d",
+            "fromPort": "out",
+            "toNode": "ffd9ec5c-af05-419e-94f3-102998b56388",
+            "toPort": "shape_in"
+          },
+          {
+            "id": "827bc7b8-edf1-4e98-87a0-3e7fc9ae5b46",
+            "fromNode": "0c9cffc2-adf8-4b8d-bf40-2654e86c766d",
+            "fromPort": "out",
+            "toNode": "85dca011-98eb-4019-a9d8-d0f0fd7036e4",
+            "toPort": "in"
+          },
+          {
+            "id": "3cfc39c3-6be8-4a3d-bbd7-ea6cccc0864c",
+            "fromNode": "a38c6fb6-544a-43d2-aafe-4e2c5f5cce5f",
+            "fromPort": "out",
+            "toNode": "5dde67b4-10d7-4a78-8fc4-b5f342cf66f0",
+            "toPort": "in"
+          },
+          {
+            "id": "ab90dbd1-2bdf-4bf7-b74e-75ffc996f20a",
+            "fromNode": "5dde67b4-10d7-4a78-8fc4-b5f342cf66f0",
+            "fromPort": "out",
+            "toNode": "0c9cffc2-adf8-4b8d-bf40-2654e86c766d",
+            "toPort": "inputs",
+            "order": 2
+          }
+        ]
+      }
+    },
+    "eb1ee994-bcb3-467c-8930-86951212261f": {
+      "id": "eb1ee994-bcb3-467c-8930-86951212261f",
+      "label": "BG",
+      "startFrame": 0,
+      "endFrame": 300,
+      "offsetFrame": 0,
+      "transform": {
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "rotation": 0,
+        "anchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "opacity": 1
+      },
+      "blendMode": "normal",
+      "enabled": true,
+      "motionBlur": false,
+      "matteLayerId": null,
+      "matteMode": null,
+      "showMatteSource": false,
+      "graph": {
+        "nodes": {
+          "f97ea67e-1c43-4da9-9483-6c529d194571": {
+            "id": "f97ea67e-1c43-4da9-9483-6c529d194571",
+            "nodeType": "SolidColor",
+            "label": "Solid Color",
+            "bypassed": false,
+            "exposeChannels": false,
+            "link": null,
+            "params": [
+              {
+                "id": "color",
+                "label": "Color",
+                "value": {
+                  "type": "color",
+                  "value": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 1
+                  }
+                },
+                "keyframes": null
+              }
+            ],
+            "ports": [
+              {
+                "id": "out",
+                "label": "Color",
+                "portType": "color",
+                "direction": "output"
+              }
+            ]
+          },
+          "6a927861-bedf-47b9-b823-a8e1338ab5cd": {
+            "id": "6a927861-bedf-47b9-b823-a8e1338ab5cd",
+            "nodeType": "Output",
+            "label": "Output",
+            "bypassed": false,
+            "exposeChannels": false,
+            "link": null,
+            "params": [
+              {
+                "id": "opacity",
+                "label": "Opacity",
+                "value": {
+                  "type": "scalar",
+                  "value": 1
+                },
+                "keyframes": null
+              },
+              {
+                "id": "blendMode",
+                "label": "Blend Mode",
+                "value": {
+                  "type": "scalar",
+                  "value": 0
+                },
+                "keyframes": null
+              },
+              {
+                "id": "motionBlur",
+                "label": "Motion Blur",
+                "value": {
+                  "type": "boolean",
+                  "value": false
+                },
+                "keyframes": null
+              },
+              {
+                "id": "audioGain",
+                "label": "Audio Gain",
+                "value": {
+                  "type": "scalar",
+                  "value": 1
+                },
+                "keyframes": null
+              },
+              {
+                "id": "audioPan",
+                "label": "Audio Pan",
+                "value": {
+                  "type": "scalar",
+                  "value": 0
+                },
+                "keyframes": null
+              },
+              {
+                "id": "audioMute",
+                "label": "Mute",
+                "value": {
+                  "type": "boolean",
+                  "value": false
+                },
+                "keyframes": null
+              }
+            ],
+            "ports": [
+              {
+                "id": "in",
+                "label": "Input",
+                "portType": "imageRgba16f",
+                "direction": "input"
+              },
+              {
+                "id": "audio_in",
+                "label": "Audio",
+                "portType": "audio",
+                "direction": "input"
+              }
+            ]
+          }
+        },
+        "edges": [
+          {
+            "id": "3dd8abea-a0da-44c9-a361-e5562b763993",
+            "fromNode": "f97ea67e-1c43-4da9-9483-6c529d194571",
+            "fromPort": "out",
+            "toNode": "6a927861-bedf-47b9-b823-a8e1338ab5cd",
+            "toPort": "in"
+          }
+        ]
+      }
+    }
+  },
+  "assets": {},
+  "editorState": {
+    "colorTokens": [
+      {
+        "id": "e5837c25-cb2d-4b4b-8b40-a72e458866fb",
+        "name": "Blue",
+        "value": {
+          "r": 0.06847816984440017,
+          "g": 0.2581828529215958,
+          "b": 1,
+          "a": 1
+        },
+        "sortOrder": 0
+      },
+      {
+        "id": "6af68a8e-e97b-4735-8dca-eff7dc710709",
+        "name": "Green",
+        "value": {
+          "r": 0.15292615199615017,
+          "g": 0.6307571363461468,
+          "b": 0.35153259950043936,
+          "a": 1
+        },
+        "sortOrder": 1
+      },
+      {
+        "id": "c5b78c9e-f6cc-41cd-8da7-6d97eeae905e",
+        "name": "Purple",
+        "value": {
+          "r": 0.4072402119017367,
+          "g": 0.15292615199615017,
+          "b": 0.9130986517934192,
+          "a": 1
+        },
+        "sortOrder": 2
+      },
+      {
+        "id": "7df30165-2fe6-4ec3-aeac-fb21b77290ab",
+        "name": "Yellow",
+        "value": {
+          "r": 0.6795424696330938,
+          "g": 0.45078578283822346,
+          "b": 0.07818742180518633,
+          "a": 1
+        },
+        "sortOrder": 3
+      },
+      {
+        "id": "52f06b14-9082-40a3-b4b3-755ac0455d31",
+        "name": "Red",
+        "value": {
+          "r": 0.8713671191987973,
+          "g": 0.12213877222960187,
+          "b": 0.11953842798834562,
+          "a": 1
+        },
+        "sortOrder": 4
+      }
+    ],
+    "colorTokenLinks": {
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:8066a5b8-c4b4-4ff1-91ad-628e755c3bdd:ramp.0": "6af68a8e-e97b-4735-8dca-eff7dc710709",
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:8066a5b8-c4b4-4ff1-91ad-628e755c3bdd:ramp.1": "e5837c25-cb2d-4b4b-8b40-a72e458866fb"
+    },
+    "assetFolders": [],
+    "assetFolderAssignments": {},
+    "assetColorTags": {},
+    "assetMeta": {},
+    "guides": {},
+    "layerColorTags": {},
+    "curveColors": {},
+    "nodeGroups": [],
+    "parentLayerId": {},
+    "isNull": [],
+    "nodePositions": {
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:a17c95ef-c192-4600-a7ac-864f21e71742": {
+        "x": -500,
+        "y": 260
+      },
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:3ddd465b-fc54-4065-b9c1-580aae90226d": {
+        "x": 220,
+        "y": -20
+      },
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:ea2c8b14-c4ec-407a-877f-3975b5bcd474": {
+        "x": 1500,
+        "y": 320
+      },
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:85dca011-98eb-4019-a9d8-d0f0fd7036e4": {
+        "x": 2380,
+        "y": 660
+      },
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:426b845c-23fd-491d-83b7-683ca098687e": {
+        "x": -120,
+        "y": 260
+      },
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:42586a60-248c-42be-964a-d0c0c457fa82": {
+        "x": 520,
+        "y": 280
+      },
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:07da50cc-f017-432c-b091-ec46a0ec724f": {
+        "x": 100,
+        "y": 280
+      },
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:8ff3e149-05c3-4f6f-a59b-14ad53e25e27": {
+        "x": -220,
+        "y": 380
+      },
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:92160c56-5d0f-4b8c-bca6-9aceb13e0f94": {
+        "x": 1120,
+        "y": 320
+      },
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:81c4cf9b-9feb-4b5c-9c79-f0b6d870a15a": {
+        "x": 920,
+        "y": 300
+      },
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:b87c6059-8802-4ddd-bf89-89fc6aa54cb6": {
+        "x": 800,
+        "y": 440
+      },
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:ef94f1ef-dcee-4a5e-870f-4e09a58da04e": {
+        "x": 700,
+        "y": 0
+      },
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:587baf9a-2895-482d-8658-b6068fda11c4": {
+        "x": 320,
+        "y": 240
+      },
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:99ac6dd6-c9e4-4adf-b07a-cdaf8c8fc7a2": {
+        "x": 1380,
+        "y": 320
+      },
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:19005b3f-3035-4c89-b38b-b7097974cff3": {
+        "x": 1280,
+        "y": 580
+      },
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:2cbae376-0c63-4e73-8252-e1a5ea977a4d": {
+        "x": 1920,
+        "y": 440
+      },
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:8066a5b8-c4b4-4ff1-91ad-628e755c3bdd": {
+        "x": 1220,
+        "y": 520
+      },
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:88f68591-fe73-4a92-8ac3-475d00cdff2b": {
+        "x": 1240,
+        "y": 760
+      },
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:0c9cffc2-adf8-4b8d-bf40-2654e86c766d": {
+        "x": 2020,
+        "y": 660
+      },
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:0f538fc5-7665-49c5-931c-c3cf51fc9a96": {
+        "x": 960,
+        "y": 720
+      },
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:d3915108-e5cc-4703-8e39-8b43c004cafa": {
+        "x": 1620,
+        "y": 760
+      },
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:43574ed6-9ce7-458a-9be8-0d88d589ed63": {
+        "x": 1260,
+        "y": 920
+      },
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:a38c6fb6-544a-43d2-aafe-4e2c5f5cce5f": {
+        "x": 1680,
+        "y": 1060
+      },
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:f8daff67-c30a-45eb-8404-c97e48382f3a": {
+        "x": 1040,
+        "y": 920
+      },
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:fa2848fd-0f31-4173-9876-860cb6e7d5ad": {
+        "x": 640,
+        "y": 980
+      },
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:470d5d5b-b0d8-4bb9-aa21-1557402dbecc": {
+        "x": 1700,
+        "y": 500
+      },
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:20001d92-70ce-4a34-aa88-8c1d0cb63774": {
+        "x": 1260,
+        "y": 1120
+      },
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:80f9bf8a-432b-4551-b77c-af3d2528e6a1": {
+        "x": 1400,
+        "y": 1140
+      },
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:87d009fa-be01-490a-bac1-891edf22e4d4": {
+        "x": 760,
+        "y": 1180
+      },
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:ffd9ec5c-af05-419e-94f3-102998b56388": {
+        "x": 1160,
+        "y": 1180
+      },
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:e0c60869-dc0b-4cad-8dbf-bbaed36ac90d": {
+        "x": 960,
+        "y": 1200
+      },
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:05f9d9ee-4644-44e9-adb2-5b80147721a5": {
+        "x": 2120,
+        "y": 680
+      },
+      "a7301ec6-b7c1-4f1e-98d2-5b380e8dc9e0:5dde67b4-10d7-4a78-8fc4-b5f342cf66f0": {
+        "x": 1940,
+        "y": 1080
+      },
+      "eb1ee994-bcb3-467c-8930-86951212261f:f97ea67e-1c43-4da9-9483-6c529d194571": {
+        "x": 40,
+        "y": 40
+      },
+      "eb1ee994-bcb3-467c-8930-86951212261f:6a927861-bedf-47b9-b823-a8e1338ab5cd": {
+        "x": 460,
+        "y": 40
+      }
+    },
+    "session": {
+      "activeCompId": "c17e01d5-c4b1-412a-959e-b117187a2993",
+      "activeLayerId": null,
+      "playheadTime": 141,
+      "previewRange": null
+    }
+  }
+}
